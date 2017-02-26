@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+from scipy import interpolate
+x = [0,1,2,3,4]
+y = [0,1,4,9,16]
+f = interpolate.interp1d(x, y)
+xnew = 3.5
+ynew = f(xnew)  
+plt.plot(x, y, 'o', xnew, ynew, 'x')
+plt.show()
+print ynew
