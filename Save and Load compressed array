@@ -1,10 +1,5 @@
->>> a=np.array([[1, 2, 3], [4, 5, 6]])
->>> b=np.array([1, 2])
->>> np.savez('/tmp/123.npz', a=a, b=b)
->>> data = np.load('/tmp/123.npz')
->>> data['a']
-array([[1, 2, 3],
-       [4, 5, 6]])
->>> data['b']
-array([1, 2])
->>> data.close()
+import numpy as np
+a = [1, 2, 3]
+np.savez('/Users/name/intensity', a1  = a)
+data = np.load('/Users/name/intensity.npz')
+print data['a1']
