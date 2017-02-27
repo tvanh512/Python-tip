@@ -1,0 +1,19 @@
+import shutil, os, random
+oldpath = '/Users/abc'
+newpath ='/Users/xyz'
+for i in range(1,101):
+    filename = random.choice(os.listdir(oldpath))
+    shutil.move(os.path.join(oldpath,filename),os.path.join(newpath,filename))
+   
+   
+In order to save memory
+    
+import os, random
+n=0
+random.seed();
+for root, dirs, files in os.walk('/Users/VietAnh/Documents/Courses/Machinelearning/Midterm/test/80s'):
+  for name in files:
+    n=n+1
+    if random.uniform(0, n) < 1: 
+        rfile=os.path.join(root, name)
+print rfile
