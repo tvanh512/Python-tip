@@ -1,0 +1,4 @@
+import joblib
+data = joblib.load('/Users/abc/xyz.pkl.gz')
+print data['clean_wavs'][0]
+len(data['clean_wavs'][2])
