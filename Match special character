@@ -1,0 +1,16 @@
+import re, math
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy import interpolate
+pitch = []
+time = []
+infile = '/Users/abc'
+def detect(input):
+    return input.endswith('\"') and (input.startswith('\"H') or input.startswith('\"L'))
+with open(infile, 'r') as f:
+    for index,line in enumerate(f):
+        words = line.split()
+        if len(words) == 3 and words[0].strip() == 'mark' and words[1] == '=' and detect(words[2].strip()):
+        #if re.match('H*', line):
+            print words[2]
+            
