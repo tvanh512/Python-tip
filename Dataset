@@ -1,0 +1,3 @@
+$ python download.py mnist
+$ python download.py celebA
+$ python download.py cifar
