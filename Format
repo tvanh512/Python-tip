@@ -1,0 +1,6 @@
+>>> "We have {0} hectares planted to {1}.".format(49, "okra")
+'We have 49 hectares planted to okra.'
+>>> "{monster} has now eaten {city}".format(city='Tokyo', monster='Mothra')
+'Mothra has now eaten Tokyo'
+>>> "The {structure} sank {0} times in {1} years.".format(3, 2, structure='castle')
+'The castle sank 3 times in 2 years.'
