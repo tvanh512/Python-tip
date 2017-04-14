@@ -14,3 +14,15 @@ with open(infile, 'r') as f:
         #if re.match('H*', line):
             print words[2]
             
+ # Split by ':'
+  with open(infile, 'r') as f:
+        for line in f:
+            words = line.split()
+            if re.match("point", line) and not re.match("pitch points", line):
+                temp = words[3]              
+                time.append(float(temp[:7]))              
+                freq.append(float(words[1]))
+                strength.append(float(words[3].split(':')[1]))
+    
+ trength.append(float(words[3].split(':')[1]))
+            
