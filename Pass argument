@@ -7,3 +7,10 @@ print sys.argv[0]
 print type(sys.argv[0])
 print sys.argv[1]
 print type(sys.argv[1])
+
+$ python test.py 200 100 0.00001
+Number of arguments: 4 arguments.
+test.py
+<type 'str'>
+200
+<type 'str'>
