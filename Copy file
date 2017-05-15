@@ -1,0 +1,10 @@
+
+import shutil
+from shutil import copy2
+print qualify_wav_fullpath[0]
+/home/data/projectabc/xyz.wav
+destdir = '/home/vietanh'
+for good_wav in qualify_wav_fullpath:
+    if os.path.isfile(good_wav):
+        copy2(good_wav, destdir)
+# Using copy2, only need to mention destination folder/home/vietanh, while copy need to mention the file such as /home/vietanh/xyz.wav
