@@ -1,0 +1,2 @@
+h = np.vstack(A)
+Av = np.hstack(A)
