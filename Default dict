@@ -1,0 +1,21 @@
+No need to initialization
+For example:
+
+from collections import defaultdict
+my_file=open("./brown-train-preprocess.txt","rt")
+wordcount1 = defaultdict(int)
+for word in my_file.read().split():
+    wordcount[word] += 1
+print (word,wordcount)
+my_file.close();
+
+my_file=open("./brown-train-preprocess.txt","rt")
+wordcount={}
+for word in my_file.read().split():
+    if word not in wordcount:
+        wordcount[word] = 1
+    else:
+        wordcount[word] += 1
+print (word,wordcount)
+my_file.close();
+
