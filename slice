@@ -1,0 +1,13 @@
+
+import itertools
+from itertools import islice
+# Start from the second element, to end (None)
+for i in islice('ABCDEFG',1,None):
+    print i
+>>> 
+B
+C
+D
+E
+F
+G
