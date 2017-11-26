@@ -1,0 +1,6 @@
+a = np.arange(20).reshape((5,4))
+x = np.array([0,1,1,0])
+print a
+fil = np.nonzero(x)
+print fil
+print a[:,fil[0]]
