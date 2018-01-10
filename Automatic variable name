@@ -1,0 +1,4 @@
+pos_cc = cc[idx_clean_pos, :]
+subname = ['piac', 'phac', 'inte','freq','strength']
+for i in subname:
+  globals()['pos_cc_{}'.format(i)] =cc[globals()['idx_clean_pos_{}'.format(i)],:]
