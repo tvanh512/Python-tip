@@ -1,0 +1,7 @@
+link https://github.com/rkern/line_profiler
+Step 1: pip install line_profiler
+Step 2: download kernprof.py to the same folder
+Step 3: Add @profile before any def that want to measure time. 
+Step 4: ./kernprof.py -l file_name.py
+Step 5: python -m line_profiler file_name.py.lprof
+
