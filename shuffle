@@ -1,0 +1,3 @@
+zipped_train = zip(word1_train, word2_train, label_train)
+random.shuffle(zipped_train)
+word1_train, word2_train, label_train= zip(*zipped_train)
