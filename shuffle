@@ -1,3 +1,16 @@
 zipped_train = zip(word1_train, word2_train, label_train)
 random.shuffle(zipped_train)
 word1_train, word2_train, label_train= zip(*zipped_train)
+
+In python 3.6: need to convert to list:
+We convert the zip object to a list by list(zipped). After this we can use all the methods of list.
+
+x = [1, 2, 3,5,7,9]
+y = [4, 5, 6,8,10,12]
+zipped = list(zip(x, y))
+random.shuffle(zipped)
+x2, y2 = zip(*zipped)
+print(x2)
+print(y2)
+(3, 7, 9, 2, 5, 1)
+(6, 10, 12, 5, 8, 4)
