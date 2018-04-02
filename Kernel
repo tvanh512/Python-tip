@@ -1,0 +1,4 @@
+Use 2 kernel in Jupyter notebook
+
+python2 -m pip install ipykernel
+python2 -m ipykernel install --user
