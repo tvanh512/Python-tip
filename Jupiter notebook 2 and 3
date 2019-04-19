@@ -4,3 +4,6 @@ http://ipython.readthedocs.io/en/stable/install/kernel_install.html
 
 python3.6 -m pip install ipykernel
 python3.6 -m ipykernel install --user
+
+python3 -m pip install ipykernel
+python3 -m ipykernel install --user
