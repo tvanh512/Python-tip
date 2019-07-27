@@ -1,0 +1,10 @@
+import torch
+out = torch.arange(36)
+out = out.view(2,3,6)
+print(out)
+outlen = torch.tensor([1,2])
+out = torch.cat([t[k] for (t, k) in zip(out, outlen)])
+out = out.view(2,6)
+print('---------')
+print(out)
+print(out.shape)
