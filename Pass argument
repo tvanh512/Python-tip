@@ -34,4 +34,7 @@ def main_worker(gpu, ngpus_per_node, args):
 if __name__ == '__main__':
     main()
     
+For positional arguments (the one without - or --) to a Python function, the order matters. 
+The first value passed from the command line becomes the first positional argument
+    
 
