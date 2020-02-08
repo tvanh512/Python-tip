@@ -14,3 +14,10 @@ test.py
 <type 'str'>
 200
 <type 'str'>
+
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument('--outdir', type=str, required=True)
+args = parser.parse_args()
+outdir = args.outdir
+
