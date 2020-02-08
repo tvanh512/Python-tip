@@ -15,9 +15,23 @@ test.py
 200
 <type 'str'>
 
+Ref: https://github.com/pytorch/examples/blob/master/imagenet/main.py
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('--outdir', type=str, required=True)
-args = parser.parse_args()
-outdir = args.outdir
+parser.add_argument('data', metavar='DIR',
+                    help='path to dataset')
+parser.add_argument('--epochs', default=90, type=int, metavar='N',
+                    help='number of total epochs to run')
+parser.add_argument('--pretrained', dest='pretrained', action='store_true',
+                    help='use pre-trained model')
+def main():
+    args = parser.parse_args()
+    main_worker(args.gpu, ngpus_per_node, args)
+    
+def main_worker(gpu, ngpus_per_node, args):
+    if args.pretrained:
+      
+if __name__ == '__main__':
+    main()
+    
 
