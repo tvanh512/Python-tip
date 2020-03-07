@@ -1,4 +1,5 @@
 https://www.datacamp.com/community/tutorials/python-regular-expression-tutorial
+https://www.w3schools.com/python/python_regex.asp
 import re, math
 import matplotlib.pyplot as plt
 import numpy as np
@@ -24,6 +25,10 @@ with open(infile, 'r') as f:
                 time.append(float(temp[:7]))              
                 freq.append(float(words[1]))
                 strength.append(float(words[3].split(':')[1]))
-    
+
+import re
+
+txt = "The rain in Spain"
+x = re.search("^The.*Spain$", txt)
  trength.append(float(words[3].split(':')[1]))
             
