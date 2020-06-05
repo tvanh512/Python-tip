@@ -1,1 +1,4 @@
 dfFilter = df.loc[(df['position']==r*nc+c) & (df['ID']==sentenceID)]
+Chain assignment can cause problem:
+https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#indexing-view-versus-copy
+https://gist.github.com/jakebathman/719e8416191ba14bb6e700fc2d5fccc5
