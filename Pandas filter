@@ -1,0 +1,1 @@
+dfFilter = df.loc[(df['position']==r*nc+c) & (df['ID']==sentenceID)]
