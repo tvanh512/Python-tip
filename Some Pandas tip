@@ -1,0 +1,8 @@
+Chain assignment can cause problem:
+https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#indexing-view-versus-copy
+https://gist.github.com/jakebathman/719e8416191ba14bb6e700fc2d5fccc5
+
+dfFilter = df.loc[(df['position']==r*nc+c) & (df['ID']==sentenceID)]
+df4=df2.loc[(df2['r'] == 0.5)].groupby('a').mean().reset_index()[['a','b','c']]
+sentenceLengthDf = summaryDfAll.groupby(['ID'])['position'].nunique().reset_index()
+df3 = pd.merge(df1,df2, how='inner',on=['ID'])
